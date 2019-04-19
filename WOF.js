@@ -38,7 +38,7 @@ var remainingLetters = word.length;
 while (remainingLetters > 0) {
     //show player progress
     alert(answerArray.join("  "));
-}
+
 
 // If guessing a letter...
 var letter = 'A';
@@ -46,7 +46,7 @@ var letter = 'A';
 var guess = prompt('guess a letter or solve the word');
     if (guess === null) {
         //exit game loop
-        return
+        break;
         console.log(exit)
     }   else if (guess.length !==1) {
         alert('please guess a letter');
@@ -59,7 +59,7 @@ var guess = prompt('guess a letter or solve the word');
             }
         }
     }
-
+}
 		// Print back the word with all instances of that letter revealed.
 
 	// If the word does not contain the letter...
